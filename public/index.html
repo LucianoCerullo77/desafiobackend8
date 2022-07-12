@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Example</h1>
+    </header>
+    <main>
+        <h2>Get products</h2>
+        <section>
+            <form action="/api/products" method="get">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"><br>
+                <input type="submit" value="Get">
+            </form>
+        </section>
+        <h2>Get product id 1</h2>
+        <section>
+            <form action="/api/products/1" method="get">
+                <input type="submit" value="Get">
+            </form>
+        </section>
+        <h2>Get product id 2</h2>
+        <section>
+            <form action="/api/products/2" method="get">
+                <input type="submit" value="Get">
+            </form>
+        </section>
+        <h2>Get product id 3</h2>
+        <section>
+            <form action="/api/products/3" method="get">
+                <input type="submit" value="Get">
+            </form> 
+        </section>
+        <span>etc</span>
+        <h2>Post product</h2>
+        <section>
+            <form action="/api/products" method="post">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"><br>
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price"><br>
+                <input type="submit" value="Post">
+            </form>
+        </section>
+        <h2>Put product</h2>
+        <section>
+            <form action="/api/products/1" method="put">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"><br>
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price"><br>
+                <input type="submit" value="Put">
+            </form>
+        </section>
+        <h2>Delete product</h2>
+        <section>
+            <form action="/api/products/1" method="delete">
+                <input type="submit" value="Delete">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,4 +1,4 @@
-[
+const productos = [
 {
     title: "ejemplo 1",
     price: 1700,
@@ -30,3 +30,5 @@
     id:5
 },
 ]
+
+module.exports = productos 
